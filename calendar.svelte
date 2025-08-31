@@ -18,7 +18,7 @@
 			{new Date(2025, i).toLocaleString('default', { month: 'long' })}<br>
 			{#each daysInAMonth as day, j}
 				 <div class="row">
-	        <div class="col" style="border-top: 1px solid rgba(39, 41, 43, 0.1);">
+	        <div class="col" style="border-top: 1px solid rgba(39, 41, 43, 0.1); {i == new Date().getMonth() && day == new Date().getDate() ? "color: red": ""}">
 						{day}
 	        </div>
 	      </div>
